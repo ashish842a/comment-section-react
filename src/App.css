@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* .box{
+  width: 100%;
+
+  padding: 20px;
+
+}
+
+.textarea{
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.textarea textarea{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  resize: none;
+}
+
+.comment-area{
+
+  min-height: fit-content;
+  height: 20%;
+}
+
+.btn{
+  width: 100%;
+
+  padding: 20px 0px;
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.btn:hover{
+  background-color: #e74d3ce4;
+  color: #fff;
+}
+
+.btn-reply{
+  padding: 5px 10px;
+  width: fit-content;
+  background-color: #e74c3c;
+  color: #fff;
+} */
+
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.textarea {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+.btn {
+  background-color: #4caf50;
   color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.comment-section {
+  margin-top: 20px;
+}
+
+.comment-area {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.comment-area p {
+  margin: 10px 0;
+}
+
+.btn-reply {
+  background-color: #3498db;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.btn-reply:hover {
+  background-color: #2980b9;
 }
